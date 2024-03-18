@@ -15,7 +15,6 @@ class TennisGame6:
 
     def score(self):
         result: str
-
         if (self.player1Score == self.player2Score):
             # tie score
             tieScore: str
@@ -67,9 +66,16 @@ class TennisGame6:
                     score2 = "Thirty"
                 case _:
                     score2 = "Forty"
-
+            print("here")
             regularScore = score1 + "-" + score2
 
             result = regularScore
 
         return result
+
+tenis = TennisGame6("toto","titie")
+tenis.won_point("titi")
+tenis.won_point("toto")
+tenis.won_point("toto")
+
+print(tenis.score())
